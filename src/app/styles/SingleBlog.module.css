@@ -1,0 +1,55 @@
+.post {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post h1 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  display: block;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.backBtn:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 180, 255, 0.4);
+}
+
+.notFound {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.notFound h1 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}

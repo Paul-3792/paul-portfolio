@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;       /* centers vertically */
+  justify-content: center; 
+  /* padding-top: 1rem; */
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+  overflow: hidden;
+  text-align: center;
+}
+/* background images slideshow */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25; /* subtle transparency */
+  animation: bgSlide 15s infinite linear;
+  z-index: 1;
+}
+@keyframes bgSlide {
+  0% {
+    background-image: url("/assets/bg1.jpg");
+  }
+  33% {
+    background-image: url("/assets/bg2.jpg");
+  }
+  66% {
+    background-image: url("/assets/bg3.jpg");
+  }
+  100% {
+    background-image: url("/assets/bg1.jpg");
+  }
+}
+
+/* dark overlay for text contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+/* content styling */
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+   /* align-items: center; */
+}
+
+.content h1 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.content h1 span {
+  color: var(--accent);
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--text);
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #008bd1;
+}

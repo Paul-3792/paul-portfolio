@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: var(--nav-bg);
+  color: var(--text);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #00b4ff;
+}
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 25px;
+  height: 22px;
+  z-index: 110;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--text);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Hamburger animation when active */
+.bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.bar2 {
+  opacity: 0;
+}
+.bar3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== NAV LINKS ===== */
+.links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #00b4ff;
+}
+
+/* Hide theme toggle on mobile links */
+.theme {
+  display: none;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 850px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide links by default on mobile */
+  .links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+  }
+
+  /* When menu is active, show it */
+  .links.active {
+    display: flex;
+    right: 0;
+  }
+
+  .links li {
+    margin: 1rem 0;
+  }
+
+  .theme {
+    display: block;
+    margin-top: 2rem;
+  }
+}
