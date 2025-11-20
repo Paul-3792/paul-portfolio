@@ -16,6 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Paul Opara | Portfolio",
   description: "My tech portfolio built with Next.js and Framer Motion",
+  icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+  },
 };
 
 export default function RootLayout({

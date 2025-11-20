@@ -1,14 +1,26 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "../styles/Navbar.module.css";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // <-- ACTIVE LINK DETECTION
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
+
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/skills" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Projects", path: "/projects" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <nav className={styles.navbar}>
@@ -25,20 +37,20 @@ export default function Navbar() {
         <div className={`${styles.bar} ${menuOpen ? styles.bar3 : ""}`}></div>
       </div>
 
-      {/* Navigation Links */}
+      {/* Nav Links */}
       <ul className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
-        {["Home", "About", "Skills", "Portfolio", "Projects", "Blog", "Contact"].map(
-          (item) => (
-            <li key={item}>
-              <Link
-                href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                onClick={closeMenu}
-              >
-                {item}
-              </Link>
-            </li>
-          )
-        )}
+        {links.map((item) => (
+          <li key={item.name}>
+            <Link
+              href={item.path}
+              onClick={closeMenu}
+              className={pathname === item.path ? styles.activeLink : ""}
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
+
         <li className={styles.theme}>
           <ThemeToggle />
         </li>

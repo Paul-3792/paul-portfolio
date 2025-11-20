@@ -147,21 +147,6 @@ export default function Portfolio() {
           </div>
         </div>
 
-         <div className={styles.section}>
-          <h2>Professional Experience</h2>
-          {experiences.map((exp, i) => (
-            <div key={i} className={styles.card}>
-              <h3>{exp.role}</h3>
-              <h4>{exp.company}</h4>
-              <span>{exp.date}</span>
-              <ul>
-                {exp.details.map((d, j) => (
-                  <li key={j}>{d}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
 
         {/* Professional Experience */}
         <div className={styles.section}>

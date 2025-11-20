@@ -15,11 +15,19 @@
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
+  text-decoration: none !important;
 }
 
 .logo span {
   color: #00b4ff;
 }
+
+.logoLink {
+  text-decoration: none !important;
+  color: inherit;
+  display: inline-block;
+}
+
 
 /* ===== HAMBURGER MENU ===== */
 .hamburger {
@@ -110,4 +118,22 @@
     display: block;
     margin-top: 2rem;
   }
+}
+
+/* ===== ACTIVE LINK STYLING ===== */
+.activeLink {
+  color: #00b4ff !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00b4ff;
+  border-radius: 10px;
 }

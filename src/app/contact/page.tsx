@@ -13,7 +13,7 @@ export default function Contact() {
         <h1>Contact Me</h1>
         <p>Have a project in mind or want to collaborate? Reach out!</p>
         <form
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://formspree.io/f/xyzobkgq"
           method="POST"
           className={styles.form}
         >
