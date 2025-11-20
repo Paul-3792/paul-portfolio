@@ -6,7 +6,7 @@
   align-items: center;       /* centers vertically */
   justify-content: center; 
   /* padding-top: 1rem; */
-  background: #000;
+  background: var(--bg);
   color: var(--text);
   transition: background 0.4s ease, color 0.4s ease;
   overflow: hidden;
