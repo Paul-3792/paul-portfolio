@@ -57,7 +57,7 @@ export default function About() {
           “Creativity meets logic in every line of code.”
         </p>
 
-        <Link href="/assets/Updated Resume- Opara Paul _105630 (1).pdf" download className={styles.btn}>
+        <Link href="/assets/OPARA PAUL 2026 CV.docx" download className={styles.btn}>
           Download Resume
         </Link>
       </motion.div>

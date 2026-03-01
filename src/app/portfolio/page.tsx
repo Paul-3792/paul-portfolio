@@ -15,7 +15,7 @@ export default function Portfolio() {
     {
       role: "Computer Technician",
       company: "Cybertron Technologies — Abuja, Nigeria",
-      date: "March 2024 - Present",
+      date: "March 2024 - August 2025",
       details: [
         "Repaired charging ports, phone screens, and serviced Android & iOS devices.",
         "Diagnosed and troubleshooted network and setup issues.",
