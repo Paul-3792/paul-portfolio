@@ -33,7 +33,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  background: rgba(0, 180, 255, 0.15);
+  background: rgba(14, 170, 236, 0.486);
 }
 
 .iconWrapper {
