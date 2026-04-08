@@ -19,7 +19,7 @@
 
 .about p {
   line-height: 1.8;
-  color: #383535;
+  color: var(--text);
   margin-bottom: 1rem;
 }
 

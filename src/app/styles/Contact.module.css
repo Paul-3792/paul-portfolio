@@ -12,7 +12,7 @@
 }
 
 .contact p {
-  color: #0e0d0d;
+  color: var(--text);
   margin-bottom: 2rem;
 }
 
