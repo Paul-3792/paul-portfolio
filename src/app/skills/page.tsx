@@ -15,7 +15,7 @@ const skills = [
   { name: "React", icon: "/assets/React.png" },
   { name: "Git", icon: "/assets/git.png" },
   { name: "GitHub", icon: "/assets/github.jfif" },
-  { name: "Next.js", icon: "/assets/nextjs-icon-svgrepo-com.svg" },
+  { name: "Next.js", icon: "/assets/nextjs.png" },
   { name: "Photoshop", icon: "/assets/photoshop-cc-logo-svgrepo-com.svg" },
   { name: "Phone/Laptop Repair", icon: "/assets/repair.png" },
   { name: "MongoDB", icon: "/assets/mongodb-svgrepo-com.svg" },
