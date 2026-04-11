@@ -12,21 +12,21 @@ export default function Projects() {
       tech: "Wordpress, Elementor, CSS",
       desc: "A functional and visually engaging website created for a church to showcase its events, and media content. It features clean navigation, mobile responsiveness, and easy-to-manage content sections. Built using Wordpress to ensure fast loading, Beautiful User Experience, and a smooth browsing experience.",
       link: "https://rccgfaithchapelfct7.com/",
-      icon: <Globe size={18} />, // 🌐 live site // replace with real link if available
+      icon: Globe, // 🌐 live site // replace with real link if available
     },
     {
       title: "Portfolio Website",
       tech: "Next.js, CSS, MotionWrapper",
       desc: "A personal portfolio showcasing my skills, experience, and projects with dark mode support, smooth transitions, and a modern design aesthetic.",
       link: "https://oparapaul.vercel.app/",
-      icon: <Globe size={18} />, // 🌐 live site
+      icon: Globe, // 🌐 live site
     },
     {
       title: "Phone Repair",
       // tech: "React.js, CSS, Firebase",
       desc: "Successfully repaired a broken phone screen, improving visibility and restoring full user interaction.",
       link: "#",
-      icon: <Wrench size={18} />,
+      icon: Wrench,
     },
   ];
 
@@ -57,7 +57,7 @@ export default function Projects() {
                 <h3>{proj.title}</h3>
                 <p className={styles.desc}>{proj.desc}</p>
                 <p className={styles.tech}>{proj.tech}</p>
-                <button className={styles.btn}> View Project</button>              
+                <button className={styles.btn}> <proj.icon /> View Project</button>              
               </div>
             </a>
           ))}
