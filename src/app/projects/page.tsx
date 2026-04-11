@@ -1,6 +1,6 @@
 "use client";
 import MotionWrapper from "../components/MotionWrapper";
-import { Github } from "lucide-react";
+import { Globe, Wrench } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "../styles/Projects.module.css";
@@ -11,19 +11,22 @@ export default function Projects() {
       title: "Church Website",
       tech: "Wordpress, Elementor, CSS",
       desc: "A functional and visually engaging website created for a church to showcase its events, and media content. It features clean navigation, mobile responsiveness, and easy-to-manage content sections. Built using Wordpress to ensure fast loading, Beautiful User Experience, and a smooth browsing experience.",
-      link: "https://rccgfaithchapelfct7.com/", // replace with real link if available
+      link: "https://rccgfaithchapelfct7.com/",
+      icon: <Globe size={18} />, // 🌐 live site // replace with real link if available
     },
     {
       title: "Portfolio Website",
       tech: "Next.js, CSS, MotionWrapper",
       desc: "A personal portfolio showcasing my skills, experience, and projects with dark mode support, smooth transitions, and a modern design aesthetic.",
-      link: "https://github.com/Paul-3792/paul-portfolio",
+      link: "https://oparapaul.vercel.app/",
+      icon: <Globe size={18} />, // 🌐 live site
     },
     {
       title: "Phone Repair",
       // tech: "React.js, CSS, Firebase",
       desc: "Successfully repaired a broken phone screen, improving visibility and restoring full user interaction.",
       link: "#",
+      icon: <Wrench size={18} />,
     },
   ];
 
@@ -54,7 +57,7 @@ export default function Projects() {
                 <h3>{proj.title}</h3>
                 <p className={styles.desc}>{proj.desc}</p>
                 <p className={styles.tech}>{proj.tech}</p>
-                <button className={styles.btn}><Github size={18} /> View Project</button>              
+                <button className={styles.btn}> View Project</button>              
               </div>
             </a>
           ))}

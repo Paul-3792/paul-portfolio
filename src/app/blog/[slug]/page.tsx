@@ -42,15 +42,39 @@ export default function SingleBlogPage() {
         Showcase your strengths, highlight testimonials, and make your brand synonymous 
         with quality and creativity.`,
     },
-    "ui-ux-principles": {
-      title: "UI/UX Design Principles Every Developer Should Know",
-      date: "August 30, 2025",
+    "python-vs-javascript-which-should-you-learn": {
+      title: "Python vs JavaScript: which should you learn?",
+      date: "April 11, 2026",
       content: `
-        Understanding UI/UX design principles helps developers create applications that not only 
-        function well but also delight users. Pay attention to spacing, typography, 
-        and intuitive navigation.
+        Choosing your first programming language can be confusing. Python and JavaScript are both popular, beginner-friendly options—but they serve different purposes.
 
-        Remember: good design is invisible — it simply works without explanation.`,
+🚀 Python
+
+Python is simple and easy to read, making it great for beginners. It’s commonly used in data science, automation, and backend development.
+
+Best for: Beginners, AI, data-related fields.
+
+🌐 JavaScript
+
+JavaScript powers the web. It’s used to create interactive websites and can also run on the backend.
+
+Best for: Web development and building apps.
+
+⚖️ Key Difference
+Python → Easier to learn, used for data and backend
+JavaScript → Essential for websites and runs in browsers
+🎯 Which Should You Choose?
+Start with Python if you want an easier introduction to programming
+Choose JavaScript if you want to build websites
+💡 Final Thought
+
+Both languages are powerful. The best choice depends on your goal—just start and stay consistent.
+
+📢 Need Help Learning?
+
+I offer programming tutoring with practical guidance to help you learn faster.
+
+👉 Contact me to get started.`,
     },
   };
 

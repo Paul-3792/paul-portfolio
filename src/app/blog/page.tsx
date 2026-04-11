@@ -30,6 +30,13 @@ export default function Blog() {
       slug: "phone-checkup-signs",
       tag: "Device Maintenance",
     },
+    {
+      title: "Python vs JavaScript: which should you learn?",
+      date: "April 11, 2026",
+      desc: "Choosing between Python and JavaScript can be confusing for beginners. This guide breaks down their differences, use cases, and helps you decide which language is best for your goals in tech.",
+      slug: "python-vs-javascript-which-should-you-learn",
+      tag: "Programming",
+    },
   ];
 
   return (
