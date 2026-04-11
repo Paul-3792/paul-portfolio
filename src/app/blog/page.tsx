@@ -23,13 +23,6 @@ export default function Blog() {
       slug: "tech-brand-freelancer",
       tag: "Personal Branding",
     },
-    {
-      title: "UI/UX Design Principles Every Developer Should Know",
-      date: "August 30, 2025",
-      desc: "A quick guide on creating intuitive, user-focused designs that make your web apps stand out visually and functionally.",
-      slug: "ui-ux-principles",
-      tag: "Design",
-    },
      {
       title: "How Can I Know When My Phone Needs Checkup?",
       date: "November 8, 2025",
